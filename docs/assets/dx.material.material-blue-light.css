@@ -1199,7 +1199,7 @@
 }
 .dx-state-disabled .dx-widget,
 .dx-state-disabled.dx-widget {
-  opacity: .78;
+  opacity: .38;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -21669,4 +21669,8 @@ input.dx-hidden {
 
 .dx-state-disabled .dx-texteditor-container {
   background-color: #ededed !important;
+}
+
+.dx-show-invalid-badge.dx-selectbox.dx-textbox.dx-texteditor.dx-dropdowneditor-button-visible.dx-editor-filled.dx-widget.dx-dropdowneditor.dx-dropdowneditor-field-clickable.dx-state-disabled {
+  opacity: .78;
 }
