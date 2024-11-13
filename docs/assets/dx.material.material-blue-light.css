@@ -1199,7 +1199,7 @@
 }
 .dx-state-disabled .dx-widget,
 .dx-state-disabled.dx-widget {
-  opacity: .38;
+  opacity: .78;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -4161,6 +4161,8 @@
 .dx-texteditor.dx-editor-filled.dx-state-readonly .dx-texteditor-input,
 .dx-texteditor.dx-editor-filled.dx-state-readonly.dx-state-hover .dx-texteditor-input {
   color: rgba(0,0,0,.38);
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.68);
 }
 .dx-texteditor.dx-editor-underlined {
   background-color: transparent;
@@ -21663,4 +21665,8 @@ input.dx-hidden {
   left: 0;
   background: rgba(0,0,0,.01);
   opacity: .01;
+}
+
+.dx-state-disabled .dx-texteditor-container {
+  background-color: #ededed !important;
 }
