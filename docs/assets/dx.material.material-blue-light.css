@@ -2714,8 +2714,8 @@
 .dx-checkbox-icon {
   width: 16px;
   height: 16px;
-  border: 2px solid rgba(0,0,0,.54);
-  border-radius: 2px;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
 }
 .dx-checkbox-icon::after {
   content: "";
@@ -9701,8 +9701,8 @@
   background-color: rgba(0,0,0,.54);
 }
 .dx-radiogroup .dx-radiobutton {
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 .dx-radiogroup .dx-radiobutton-icon {
   margin-top: 0;
