@@ -9602,12 +9602,25 @@
   -webkit-padding-end: 10px;
   padding-inline-end: 10px;
 }
+
+.dx-radiogroup-vertical .dx-radiobutton {
+  margin-top: 0 !important;
+  margin-bottom: 16px !important;
+}
+
 .dx-radiogroup-horizontal .dx-collection {
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 17px;
   column-gap: 17px;
+  align-items: center;
 }
+
+.dx-radiogroup-horizontal .dx-collection > .dx-item {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .dx-radiobutton {
   -webkit-user-select: none;
   -moz-user-select: none;
