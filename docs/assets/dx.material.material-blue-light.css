@@ -2973,7 +2973,7 @@
 }
 .dx-tabs {
   padding: 0;
-  background-color: #fff;
+  /* background-color: #fff; */
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -2983,6 +2983,7 @@
   width: 100%;
 }
 .dx-tabs .dx-inkripple {
+  display: none;
   overflow: hidden;
 }
 .dx-tabs .dx-scrollable {
@@ -3033,14 +3034,14 @@
   width: 2px;
 }
 .dx-tabs-styling-mode-primary.dx-tab-indicator-position-bottom .dx-tab-selected::after {
-  content: "";
+  /* content: "";
   position: absolute;
   background-color: #03a9f4;
   right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 2px; */
 }
 .dx-tabs-styling-mode-primary.dx-tab-indicator-position-bottom .dx-tab-selected.dx-state-disabled::after {
   content: "";
@@ -3756,30 +3757,55 @@
 .dx-tab {
   gap: 4px;
   padding: 6px 12px;
-  background-color: #fff;
   color: rgba(0,0,0,.54);
 }
 .dx-tab.dx-state-hover {
-  background-color: rgba(3,169,244,.08);
+  /* background-color: rgba(3,169,244,.08); */
 }
 .dx-tab.dx-tab-selected,
 .dx-tab.dx-tab-selected .dx-icon {
-  color: #03a9f4;
+  color: #79ACFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-decoration-skip-ink: none;
 }
+
+.dx-tab.dx-tabpanel-tab.dx-tab-selected { 
+  background-color: #fff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 4px 2px 8px #0000001A
+}
+.dx-tab.dx-tab-selected .dx-tab-text {
+  color: #79ACFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 .dx-tab.dx-state-disabled,
 .dx-tab.dx-state-disabled .dx-icon {
   color: rgba(0,0,0,.32);
 }
 .dx-tab.dx-state-active,
 .dx-tab.dx-state-active .dx-inkripple-wave {
-  background-color: rgba(3,169,244,.16);
+  /* background-color: rgba(3,169,244,.16); */
 }
 .dx-tab .dx-tab-text {
   -moz-column-gap: 8px;
   column-gap: 8px;
   line-height: 1.714286;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: center;
 }
 .dx-tab .dx-tab-text .dx-tab-text-span-pseudo {
   display: none;
@@ -3799,7 +3825,7 @@
   align-self: center;
 }
 .dx-tabs.dx-state-focused .dx-tab.dx-state-focused {
-  background-color: rgba(3,169,244,.12);
+  /* background-color: rgba(3,169,244,.12); */
 }
 .dx-tabs-nav-button {
   border: none;
@@ -15768,6 +15794,9 @@ input.dx-hidden {
 .dx-tabpanel {
   display: flex;
   flex-direction: column;
+  background-color: #F0F5FF;
+  padding: 8px 16px 16px 16px;
+  border-radius: 8px;
 }
 .dx-tabpanel .dx-tabs-vertical .dx-tabs-wrapper {
   min-height: 100%;
@@ -15814,7 +15843,7 @@ input.dx-hidden {
   height: auto;
 }
 .dx-tabpanel-tabs-position-top .dx-tabs {
-  border-bottom: 1px solid #e0e0e0;
+  /* border-bottom: 1px solid #e0e0e0; */
 }
 .dx-empty-collection.dx-tabpanel-tabs-position-top .dx-tabs {
   border-bottom: none;
@@ -18536,6 +18565,8 @@ input.dx-hidden {
 }
 .dx-layout-manager .dx-tabpanel .dx-multiview-item-content {
   padding: 20px;
+  background-color: #fff;
+  box-shadow: 4px 4px 12px #0000001A;
 }
 .dx-field-item-label-location-top .dx-field-item-custom-label-content {
   display: inline-block;
@@ -21686,4 +21717,18 @@ input.dx-hidden {
 
 .dx-show-invalid-badge.dx-selectbox.dx-textbox.dx-texteditor.dx-dropdowneditor-button-visible.dx-editor-filled.dx-widget.dx-dropdowneditor.dx-dropdowneditor-field-clickable.dx-state-disabled {
   opacity: .78;
+}
+
+
+/* 額外增加的
+*/
+
+.dx-tabpanel-container .dx-multiview-item,
+.dx-tabpanel-container .dx-multiview-wrapper {
+  overflow: visible;
+}
+
+.dx-tabpanel-tabs {
+  overflow: hidden;
+  z-index: 10;
 }
